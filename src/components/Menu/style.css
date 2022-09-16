@@ -1,0 +1,60 @@
+.menu {
+    display: flex;
+    color: white;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: red;
+}
+
+.icon-close,
+.icon-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+
+    .icon-menu,
+    .icon-close {
+        display: block;
+        width: 40px;
+        right: 2ren;
+        top: 3.5rem;
+
+    }
+
+    .menu-small {
+        position: absolute;
+        background-color: #c12d13;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .menu-small ul {
+        display: block;
+    }
+}
